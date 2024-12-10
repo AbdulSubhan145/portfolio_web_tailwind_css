@@ -2,100 +2,43 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    //HERO SEACTION
+    <section className="body-font">
+  <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
+      <Image
+        className="object-cover object-center rounded-3xl "
+        alt="hero"
+        src="/my pic.jpg"
+        width={290}
+        height={290}
+        
+      />
     </div>
-  );
+    <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-yellow-500">
+        Hey
+        <br className="hidden lg:inline-block" />
+        im Abdul Subhan
+      </h1>
+      <p className="mb-8 leading-relaxed text-yellow-200">
+      As a passionate and detail-oriented web developer, I specialize in crafting visually appealing and highly functional websites. With extensive experience in HTML, CSS, JavaScript, and TypeScript, I excel at creating responsive, user-friendly, and performance-driven web applications. My expertise allows me to transform complex design concepts into seamless, interactive web experiences. Whether working on front-end development, optimizing code for scalability, or integrating modern technologies, I am committed to delivering clean, efficient code that ensures a great user experience across all devices.
+      </p>
+      <div className="flex justify-center">
+        <button className="inline-flex text-yellow-500 border-4 border-solid border-yellow-500 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+          About me
+        </button>
+        <button className="ml-4 inline-flex text-black bg-gray-100 border-4 border-solid border-yellow-500  py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg">
+         Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    );
 }
